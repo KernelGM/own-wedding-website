@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "own-wedding-website"
+version = "0.1.0"
+description = "Inicio do projeto do meu site de casamento, pode ser usado como base para o seu também."
+authors = ["Gustavo Martins <51761894+KernelGM@users.noreply.github.com>"]
+license = "GPL3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10.8"
+Django = "^4.2.4"
+
+[tool.poetry.group.dev.dependencies]
+blue = "^0.9.1"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
