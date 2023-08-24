@@ -14,7 +14,17 @@ Django = "^4.2.4"
 blue = "^0.9.1"
 isort = "^5.12.0"
 python-decouple = "^3.8"
+taskipy = "^1.12.0"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+line_length =  79
+
+[tool.taskipy.tasks]
+lint = "blue . && isort ."
+django = "python manage.py runserver"
+docs = "mkdocs serve"
